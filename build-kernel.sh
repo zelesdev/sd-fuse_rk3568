@@ -246,7 +246,7 @@ function build_kernel() {
 
     # build r8125 driver
     export ETHTOOL_LEGACY_2500baseX=y
-    build_external_module "https://github.com/friendlyarm/r8125" "main" "r8125"
+    build_external_module "https://github.com/zelesdev/r8125/" "main" "r8125"
     unset ETHTOOL_LEGACY_2500baseX
 
     # build cryptodev-linux
